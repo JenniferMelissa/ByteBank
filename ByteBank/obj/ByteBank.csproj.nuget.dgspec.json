@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\jennifer.sales\\source\\repos\\ByteBank\\ByteBank\\ByteBank.csproj": {}
+    "D:\\Users\\jennifer.sales\\Desktop\\ByteBank\\ByteBank\\ByteBank.csproj": {}
   },
   "projects": {
-    "D:\\Users\\jennifer.sales\\source\\repos\\ByteBank\\ByteBank\\ByteBank.csproj": {
+    "D:\\Users\\jennifer.sales\\Desktop\\ByteBank\\ByteBank\\ByteBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jennifer.sales\\source\\repos\\ByteBank\\ByteBank\\ByteBank.csproj",
+        "projectUniqueName": "D:\\Users\\jennifer.sales\\Desktop\\ByteBank\\ByteBank\\ByteBank.csproj",
         "projectName": "ByteBank",
-        "projectPath": "D:\\Users\\jennifer.sales\\source\\repos\\ByteBank\\ByteBank\\ByteBank.csproj",
+        "projectPath": "D:\\Users\\jennifer.sales\\Desktop\\ByteBank\\ByteBank\\ByteBank.csproj",
         "packagesPath": "D:\\Users\\jennifer.sales\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jennifer.sales\\source\\repos\\ByteBank\\ByteBank\\obj\\",
+        "outputPath": "D:\\Users\\jennifer.sales\\Desktop\\ByteBank\\ByteBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
