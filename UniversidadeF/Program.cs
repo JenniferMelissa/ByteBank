@@ -10,4 +10,11 @@ aluno10011.nome_curso = "Ciência de Dados";
 aluno10011.polo = "Riacho Fundo";
 aluno10011.ead = true;
 
+Console.WriteLine("O aluno é matriculado no polo " + aluno10011.polo);
+
+
+
+aluno10011.TrocarPolo("Águas Claras");
+
+Console.WriteLine(aluno10011.polo);
 

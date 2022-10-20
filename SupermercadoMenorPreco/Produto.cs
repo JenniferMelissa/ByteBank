@@ -15,5 +15,10 @@ namespace SupermercadoMenorPreco
         public double valor_unitario;
         public double valor_de_compra;
         public int quantidade_estoque;
+
+        public void AumentoProduto(int aumento)
+        {
+            this.valor_unitario += aumento;
+        }
     }
 }

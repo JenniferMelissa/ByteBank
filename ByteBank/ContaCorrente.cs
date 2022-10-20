@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
+    //classe representa alguma coisa que existe no mundo real 
     public class ContaCorrente
     {
-        //classe representa alguma coisa que existe no mundo real 
-
         public int numero_agencia;
         public string conta;
         public string titular;
         public double saldo;
+
+        //metodos -> medem o comportamento de uma classe
+        //é um bloco de código que contém uma série de instruções
+        public void Depositar(double valor)
+        {
+            //void -> valor nenhum(caixa)
+            //this -> representa o próprio objeto
+            this.saldo += valor;
+        }
     }
 }

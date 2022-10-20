@@ -1,0 +1,15 @@
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\bin\Debug\net6.0\SupermercadoMenorPreco.exe
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\bin\Debug\net6.0\SupermercadoMenorPreco.deps.json
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\bin\Debug\net6.0\SupermercadoMenorPreco.runtimeconfig.json
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\bin\Debug\net6.0\SupermercadoMenorPreco.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\bin\Debug\net6.0\SupermercadoMenorPreco.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.csproj.AssemblyReference.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.AssemblyInfoInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.AssemblyInfo.cs
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.csproj.CoreCompileInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\refint\SupermercadoMenorPreco.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\SupermercadoMenorPreco.genruntimeconfig.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\SupermercadoMenorPreco\obj\Debug\net6.0\ref\SupermercadoMenorPreco.dll

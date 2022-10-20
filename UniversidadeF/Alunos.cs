@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniversidadeF
 {
-    internal class Alunos
+    public class Alunos
     {
         public int id_aluno;
         public string nome_aluno;
@@ -16,5 +16,10 @@ namespace UniversidadeF
         public string nome_curso;
         public string polo;
         public bool ead;
+
+        public void TrocarPolo(string novo)
+        {
+            this.polo = novo;
+        }
     }
 }

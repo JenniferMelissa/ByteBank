@@ -1,0 +1,15 @@
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\bin\Debug\net6.0\Concessionaria.exe
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\bin\Debug\net6.0\Concessionaria.deps.json
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\bin\Debug\net6.0\Concessionaria.runtimeconfig.json
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\bin\Debug\net6.0\Concessionaria.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\bin\Debug\net6.0\Concessionaria.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.csproj.AssemblyReference.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.AssemblyInfoInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.AssemblyInfo.cs
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.csproj.CoreCompileInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\refint\Concessionaria.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\Concessionaria.genruntimeconfig.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Carros\obj\Debug\net6.0\ref\Concessionaria.dll

@@ -1,0 +1,15 @@
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\bin\Debug\net6.0\UniversidadeF.exe
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\bin\Debug\net6.0\UniversidadeF.deps.json
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\bin\Debug\net6.0\UniversidadeF.runtimeconfig.json
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\bin\Debug\net6.0\UniversidadeF.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\bin\Debug\net6.0\UniversidadeF.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.csproj.AssemblyReference.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.AssemblyInfoInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.AssemblyInfo.cs
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.csproj.CoreCompileInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\refint\UniversidadeF.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\UniversidadeF.genruntimeconfig.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\UniversidadeF\obj\Debug\net6.0\ref\UniversidadeF.dll

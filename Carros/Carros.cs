@@ -14,5 +14,12 @@ namespace Concessionaria
         public int ano_fabricacao;
         public double preco;
         public long codigo_do_carro;
+
+
+
+        public void AumentoPreco(double novoPreco)
+        {
+            this.preco += novoPreco;
+        }
     }
 }
