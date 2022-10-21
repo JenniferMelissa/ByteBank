@@ -25,7 +25,7 @@ namespace ByteBank
 
         public bool Sacar(double valor)
         {
-            if(valor <= this.saldo)
+            if (valor <= this.saldo)
             {
                 this.saldo -= valor;
                 return true;
@@ -34,6 +34,7 @@ namespace ByteBank
             {
                 return false;
             }
+            
         }
     }
 }

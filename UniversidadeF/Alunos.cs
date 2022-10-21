@@ -8,18 +8,31 @@ namespace UniversidadeF
 {
     public class Alunos
     {
-        public int id_aluno;
+        public int matricula;
         public string nome_aluno;
         public string endereco_aluno;
         public string UF;
         public string tipo_curso;
         public string nome_curso;
         public string polo;
-        public bool ead;
+        public string modaliade_ensino;
 
         public void TrocarPolo(string novo)
         {
             this.polo = novo;
+        }
+
+        public bool MudarSe(int matricula)
+        {
+            if(matricula == this.matricula)
+            {
+                this.matricula = matricula;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
