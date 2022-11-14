@@ -33,5 +33,10 @@ namespace Concessionaria
             }
             
         }
+
+        public bool TrocarCarro(int novo)
+        {
+            
+        }
     }
 }

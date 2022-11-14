@@ -36,6 +36,23 @@ else
     Console.WriteLine("Devido ao aumento do valor. Não encontra-se no seu orçamento de preço.");
 }
 
+//Trocar carro
+Carros Gol = new Carros();
+
+Gol.codigo_do_carro = 101111;
+Gol.nome_do_carro = "Gol";
+Gol.versao = "Gol 1.0 MPI";
+Gol.fabricante = "Volkswagem";
+Gol.ano_fabricacao = 2023;
+Gol.preco = 70000;
+
+
+
+
+
+
+
+
 
 
 

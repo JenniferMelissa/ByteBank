@@ -1,0 +1,15 @@
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\bin\Debug\net6.0\Consultorio.exe
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\bin\Debug\net6.0\Consultorio.deps.json
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\bin\Debug\net6.0\Consultorio.runtimeconfig.json
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\bin\Debug\net6.0\Consultorio.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\bin\Debug\net6.0\Consultorio.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.csproj.AssemblyReference.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.AssemblyInfoInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.AssemblyInfo.cs
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.csproj.CoreCompileInputs.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\refint\Consultorio.dll
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.pdb
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\Consultorio.genruntimeconfig.cache
+D:\Users\jennifer.sales\Desktop\ByteBank\Consultorio\obj\Debug\net6.0\ref\Consultorio.dll
