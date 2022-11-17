@@ -15,6 +15,7 @@ namespace ByteBank.Contas
         //static - a propriedade passa a ser da classe e nao mais dos objetos criados a partir dela
         //é uma propriedade da classe e nao do objeto
         //set so vai funcionar dentro da propria classe conta corrente
+        public static double TaxaOperacao { get; private set; }
         public static int TotalDeContasCriadas { get; private set; }
         public Cliente Titular { get; set; }
 
@@ -108,6 +109,8 @@ namespace ByteBank.Contas
             //this - é uma referencia a instancia do objeto
             this.numero_agencia = numero_agencia;
             this.Conta = numero_conta;
+
+            TaxaOperacao = 30 / TotalDeContasCriadas;
             TotalDeContasCriadas++;
         }
     }

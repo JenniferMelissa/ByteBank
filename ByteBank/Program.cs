@@ -5,6 +5,7 @@
 //ctl k + u -> descomenta as linhas
 
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using ByteBank.Contas;
 using ByteBank.Titular;
 
@@ -140,37 +141,95 @@ using ByteBank.Titular;
 //Console.WriteLine(conta4.Numero_agencia);
 
 //para acessar a classe/metodo/campo STATIC precisa referenciar a classe nao mais o obejeto
-ContaCorrente conta5 = new ContaCorrente(283, "1234-X");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+//ContaCorrente conta5 = new ContaCorrente(283, "1234-X");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
 
-ContaCorrente conta6 = new ContaCorrente(284, "9874-Z");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+//ContaCorrente conta6 = new ContaCorrente(284, "9874-Z");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
 
-ContaCorrente conta7 = new ContaCorrente(285, "2274-Y");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
-
-
-Cliente sarah = new Cliente();
-sarah.Nome = "Sarah Silva";
-sarah.Profissao = "Professora";
-sarah.Cpf = "11111111-12";
-
-Cliente ester = new Cliente();
-ester.Nome = "Ester Almeida";
-ester.Profissao = "Advogada";
-ester.Cpf = "868524125-32";
-
-Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
-
-ContaCorrente contaAndre = new ContaCorrente(159, "152869-x");
-contaAndre.Titular = new Cliente();
-contaAndre.Titular.Nome = " André Pereira";
-contaAndre.Titular.Profissao = "Auxiliar Administrativo";
+//ContaCorrente conta7 = new ContaCorrente(285, "2274-Y");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
 
 
-Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
+//Cliente sarah = new Cliente();
+//sarah.Nome = "Sarah Silva";
+//sarah.Profissao = "Professora";
+//sarah.Cpf = "11111111-12";
+
+//Cliente ester = new Cliente();
+//ester.Nome = "Ester Almeida";
+//ester.Profissao = "Advogada";
+//ester.Cpf = "868524125-32";
+
+//Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
+
+//ContaCorrente contaAndre = new ContaCorrente(159, "152869-x");
+//contaAndre.Titular = new Cliente();
+//contaAndre.Titular.Nome = " André Pereira";
+//contaAndre.Titular.Profissao = "Auxiliar Administrativo";
 
 
+//Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
+
+
+
+//CURSO - EXCEÇÕES
+class Program
+{
+    static void Main(string[] args)
+    {
+        //ContaCorrente conta = new ContaCorrente(7480, "44545");
+        //Console.WriteLine(ContaCorrente.TaxaOperacao);
+        Metodo();
+
+        Console.ReadLine();
+
+    }
+
+    private static void Metodo()
+    {
+        //Try - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
+        try
+        {
+            TestaDivisao(0);
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Ocorreu um erro! Não é possível dividir este número por 0");
+        }
+        
+        
+    }
+
+    private static void TestaDivisao(int divisor)
+    {
+        int resultado = Dividir(10, divisor);
+
+        if (resultado == -1)
+        {
+            Console.WriteLine("Não é possível fazer divisão por 0");
+        }
+        else 
+        {
+            Console.WriteLine("Resultad da divis]ao de 10 por " + divisor + " é " + resultado);
+        }
+
+    }
+
+    private static int Dividir(int numero, int divisor)
+    {
+        if(divisor == 0)
+        {
+            return -1;
+        }
+        if (divisor > numero)
+        {
+            return -2;
+        }
+        return numero / divisor;
+    }
+
+}
 
 
 
