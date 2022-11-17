@@ -212,19 +212,29 @@ class Program
 
     private static int Dividir(int numero, int divisor)
     {
-        ContaCorrente conta = null;
-        //if(divisor == 0)
-        //{
-        //    return -1;
-        //}
-        //if (divisor > numero)
-        //{
-        //    return -2;
+        try
+        {
+            return numero / divisor;
         }
-        return numero / divisor;
+        catch
+        {
+            Console.WriteLine("Exceção com número = " + numero + " e divisor = " + divisor);
+            throw;
+            //THROW: Lançada a exceção, o programa buscará como tratá-la e exibirá a mensagem apropriada. Faz a busca da exceção e retorna o que deveria ser mostrado.
+        }
     }
+        
+ }
 
-}
+// Ficar atenta a alguns pontos TRY-CATCH:
+
+//1) A ordem das cláusulas importa, já que são examinadas em ordem;
+
+//2) A exceções mais específicas devem ser capturadas antes das menos específicas;
+
+//3) Terá um erro de compilação se ordenar os blocos catch de forma que um bloco posterior nunca possa ser alcançado.
+
+
 
 
 
