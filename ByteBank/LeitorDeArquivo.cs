@@ -13,6 +13,8 @@ namespace ByteBank
         public LeitordeArquivo(string arquivo)
         {
             Arquivo = arquivo;
+            throw new FileNotFoundException();
+
             Console.WriteLine("Abrindo arquivo: " + arquivo);
         }
 

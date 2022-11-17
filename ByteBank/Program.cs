@@ -221,8 +221,8 @@ class Program
         }
 
 
-        Try - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
-        consegue lancçar uma exceção
+        //ry - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
+        //consegue lançar uma exceção
         try
         {
             Metodo();
@@ -249,13 +249,18 @@ class Program
             leitor.LerProximaLinha();
             leitor.LerProximaLinha();
 
-            leitor.Fechar();
+           
 
         }
         catch (IOException e)
         {
-            leitor.Fechar();
+        
             Console.WriteLine("Exceção do tipo IOExepetion capturada e tratada!");
+        }
+        //finally é um bloco que vai ser sempre executado independente se a gente encontrar uma exceção ou não
+        finally
+        {
+            leitor.Fechar();
         }
 
     }
