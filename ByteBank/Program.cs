@@ -6,6 +6,7 @@
 
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
+using ByteBank;
 using ByteBank.Contas;
 using ByteBank.Titular;
 
@@ -192,7 +193,14 @@ class Program
             //ParamName - propriedade dentro do ArgumentException que permite deixar claro qual é o parâmetro que está fazendo erro no codigo 
             Console.WriteLine("Erro no parâmetro: " + ex.ParamName);
             Console.WriteLine("Ocorreu um erro do tipo ArgumentException.");
+            //O StackTrace é responsável por obter uma representação de cadeias de caracteres de quadros imediatos na nossa pilha de chamadas.
+            Console.WriteLine(ex.StackTrace);
             Console.WriteLine(ex.Message);
+        }
+        catch(SaldoInsuficienteException ex)
+        {
+            Console.WriteLine(ex.Message);
+            Console.WriteLine("Exceção do tipo SaldoInsuficienteException.");
         }
 
 

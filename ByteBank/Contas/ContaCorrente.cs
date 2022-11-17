@@ -55,16 +55,17 @@ namespace ByteBank.Contas
             saldo += valor;
         }
 
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
             if (valor <= saldo)
             {
                 saldo -= valor;
-                return true;
+                
             }
             else
             {
-                return false;
+                //criação da nova exceção
+                throw new SaldoInsuficienteException("Saldo Insuficiente para saque no valor de " + valor);
             }
 
         }
