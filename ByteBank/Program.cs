@@ -178,11 +178,26 @@ class Program
 {
     static void Main(string[] args)
     {
-        //ContaCorrente conta = new ContaCorrente(7480, "44545");
-        //Console.WriteLine(ContaCorrente.TaxaOperacao);
+        
+        try
+        {
+            ContaCorrente conta = new ContaCorrente(5025,56665);
+            conta.Depositar(50);
+            Console.WriteLine(conta.GetSaldo());
+            conta.Sacar(500);
+            Console.WriteLine(conta.GetSaldo());
+        }
+        catch(ArgumentException ex)
+        {
+            //ParamName - propriedade dentro do ArgumentException que permite deixar claro qual é o parâmetro que está fazendo erro no codigo 
+            Console.WriteLine("Erro no parâmetro: " + ex.ParamName);
+            Console.WriteLine("Ocorreu um erro do tipo ArgumentException.");
+            Console.WriteLine(ex.Message);
+        }
 
 
         //Try - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
+        //consegue lancçar uma exceção
         try
         {
             Metodo();

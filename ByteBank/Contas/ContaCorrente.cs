@@ -28,19 +28,20 @@ namespace ByteBank.Contas
             //escopo
             //dentro do set e get faz as validaçoes necessarias(escopo)
             get { return this.numero_agencia; }
-            private set {
+            private set 
+            {
                 //no set, cria-se uma variavel de tempo de execuçao chamada VALUE para ter acesso a variavel
                     if(value > 0)
                     {
                         this.numero_agencia = value;
                     }
-                 }
+            }
         }
 
         //PROPRIEDADE AUTOIMPLEMENTADA
         //Se tenho uma propriedade que nao é interessante fazer nenhum tipo de validação utiliza essa propriedade autoimplementada,
         //deixando o codigo melhor e menor
-        public string Conta { get; set; }
+        public int Conta { get; set; }
 
         //campo privado, ele so é visivel dentro do codigo da classe(fora dela nao é mais)
         private double saldo = 100;
@@ -104,13 +105,24 @@ namespace ByteBank.Contas
         //METODO CONSTRUTOR 
         //É util para criar nosso objeto na memoria, podendo colocar parametros para definir um objeto, assim, quando criar o objeto na memoria ele ja ter alguns valores, campos ja definidos
         //Digite "ctor + tab + tab" para contruir o construtor padrao
-        public ContaCorrente(int numero_agencia, string numero_conta)
+        public ContaCorrente(int numero_agencia, int numero_conta)
         {
             //this - é uma referencia a instancia do objeto
             this.numero_agencia = numero_agencia;
             this.Conta = numero_conta;
 
-            TaxaOperacao = 30 / TotalDeContasCriadas;
+            //TaxaOperacao = 30 / TotalDeContasCriadas;
+            if(numero_agencia <= 0)
+            {
+                //nameof - parametro a ser analisado pelo ArgumentException junto ao ParamName
+                throw new ArgumentException("O argumento número da agência devem ser maior que 0", nameof(numero_agencia));
+            }
+
+            if(numero_conta <= 0)
+            {
+                throw new ArgumentException("O argumento número da conta devem ser maior que 0", nameof(numero_conta));
+            }
+
             TotalDeContasCriadas++;
         }
     }
