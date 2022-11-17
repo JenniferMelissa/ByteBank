@@ -15,8 +15,9 @@ namespace ByteBank.Contas
         //static - a propriedade passa a ser da classe e nao mais dos objetos criados a partir dela
         //é uma propriedade da classe e nao do objeto
         //set so vai funcionar dentro da propria classe conta corrente
-        public static double TaxaOperacao { get; private set; }
         public static int TotalDeContasCriadas { get; private set; }
+        public int ContadorSaquesNaoPermitidos { get; private set; }
+        public int ContadorTransferenciasNaoPermitidas { get; private set; }
         public Cliente Titular { get; set; }
 
         //PROPRIEDADE - encapsula um campo que é privado (colocas os campos que eramm public para private)
@@ -64,6 +65,7 @@ namespace ByteBank.Contas
             }
             else
             {
+                ContadorSaquesNaoPermitidos++;
                 //criação da nova exceção
                 throw new SaldoInsuficienteException("Saldo Insuficiente para saque no valor de " + valor);
             }
@@ -72,6 +74,17 @@ namespace ByteBank.Contas
 
         public bool Transferir(double valor, ContaCorrente destino)
         {
+            try
+            {
+                Sacar(valor);
+            }
+            catch(SaldoInsuficienteException ex)
+            {
+                ContadorTransferenciasNaoPermitidas++;
+                throw new OperacaoFinanceiraExeption("Operação não realizada.", ex);
+            }
+
+
             if (saldo < valor)
             {
                 return false;

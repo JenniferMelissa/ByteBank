@@ -4,6 +4,7 @@
 //ctl k + c -> comenta as linhas
 //ctl k + u -> descomenta as linhas
 
+using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using ByteBank;
@@ -179,16 +180,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        CarregarContas();
+
+
+
         try
         {
-            ContaCorrente conta = new ContaCorrente(5025,56665);
+            ContaCorrente conta = new ContaCorrente(5025, 56665);
+            ContaCorrente conta2 = new ContaCorrente(5024, 56625);
+
             conta.Depositar(50);
             Console.WriteLine(conta.GetSaldo());
-            conta.Sacar(500);
+            //conta.Sacar(500);
+            conta.Transferir(500, conta2);
             Console.WriteLine(conta.GetSaldo());
         }
-        catch(ArgumentException ex)
+        catch (ArgumentException ex)
         {
             //ParamName - propriedade dentro do ArgumentException que permite deixar claro qual é o parâmetro que está fazendo erro no codigo 
             Console.WriteLine("Erro no parâmetro: " + ex.ParamName);
@@ -197,15 +204,25 @@ class Program
             Console.WriteLine(ex.StackTrace);
             Console.WriteLine(ex.Message);
         }
-        catch(SaldoInsuficienteException ex)
+        catch (SaldoInsuficienteException ex)
         {
             Console.WriteLine(ex.Message);
             Console.WriteLine("Exceção do tipo SaldoInsuficienteException.");
         }
+        catch (OperacaoFinanceiraExeption ex)
+        {
+            Console.WriteLine(ex.Message);
+            Console.WriteLine(ex.StackTrace);
+
+            Console.WriteLine("Informações da INNER EXCEPTION (exceção interna): ");
+
+            Console.WriteLine(ex.InnerException.Message);
+            Console.WriteLine(ex.InnerException.StackTrace);
+        }
 
 
-        //Try - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
-        //consegue lancçar uma exceção
+        Try - diz para o C# executar alguma coisa, dentro desse bloco, e se tiver alguma exceção voce vai fazer alguma coisa, algum codigo, comando e vai mostrar isso
+        consegue lancçar uma exceção
         try
         {
             Metodo();
@@ -222,9 +239,42 @@ class Program
 
     }
 
+    private static void CarregarContas()
+    {
+        LeitordeArquivo leitor = new LeitordeArquivo("contas.txt");
+        try
+        {
+            
+            leitor.LerProximaLinha();
+            leitor.LerProximaLinha();
+            leitor.LerProximaLinha();
+
+            leitor.Fechar();
+
+        }
+        catch (IOException e)
+        {
+            leitor.Fechar();
+            Console.WriteLine("Exceção do tipo IOExepetion capturada e tratada!");
+        }
+
+    }
+
+    private static void TestaInnerException()
+    {
+        try
+        {
+            ContaCorrente conta = new ContaCorrente(5025, 56665);
+        }
+        catch
+        {
+
+        }
+    }
+
     private static void Metodo()
     {
-            TestaDivisao(0);
+        TestaDivisao(0);
     }
 
     private static void TestaDivisao(int divisor)
@@ -246,8 +296,7 @@ class Program
             //THROW: Lançada a exceção, o programa buscará como tratá-la e exibirá a mensagem apropriada. Faz a busca da exceção e retorna o que deveria ser mostrado.
         }
     }
-        
- }
+}
 
 // Ficar atenta a alguns pontos TRY-CATCH:
 
